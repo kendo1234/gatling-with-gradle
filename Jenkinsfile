@@ -1,7 +1,7 @@
 pipeline {
     agent any
         tools {
-        gradle "GRADLE_LATEST"
+        gradle "Default"
     }
     stages {
         stage("Build Gradle") {
