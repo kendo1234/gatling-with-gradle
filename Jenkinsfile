@@ -6,12 +6,12 @@ pipeline {
     stages {
         stage("Build Gradle") {
             steps {
-                sh 'gradle build'
+                sh 'gradlew build'
             }
         }
         stage("Run Gatling") {
             steps {
-                sh 'gradle gatlingRun'
+                sh 'gradlew gatlingRun'
             }
             post {
                 always {
