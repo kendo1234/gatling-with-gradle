@@ -4,10 +4,15 @@ pipeline {
         gradle "Default"
     }
     stages {
-        stage("Build Gradle") {
+        stage("Clean Gradle") {
+            steps {
+                sh 'gradle clean'
+            }
+        }
+        stage("Build Gradle"){
             steps {
                 sh 'gradle build'
-            }
+                }
         }
         stage("Run Gatling") {
             steps {
