@@ -17,7 +17,7 @@ class BasicSimulation extends Simulation {
       .get("/"))
     .pause(5)
 
-  setUp( // 11
+  setUp(
     scn.inject(atOnceUsers(1))
   ).protocols(httpProtocol)
 }
