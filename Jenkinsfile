@@ -6,7 +6,7 @@ pipeline {
     stages {
         stage("Build Gradle") {
             steps {
-                sh 'gradle clean build'
+                sh 'gradle build'
             }
         }
         stage("Run Gatling") {
